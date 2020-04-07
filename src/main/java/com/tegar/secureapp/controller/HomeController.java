@@ -1,14 +1,15 @@
-package com.tegar.secureapp;
+package com.tegar.secureapp.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+
+@RestController
 public class HomeController {
 	
 	@RequestMapping("/home")
 	private String home() {
-		return "home.jsp";
+		return "<h1> HOMEPAGE </h1>";
 	}
 
 }
